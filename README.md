@@ -15,15 +15,15 @@ Java 17 JDK or newer is required.
 
 ### Windows
 ```
-git clone https://github.com/dashnetworkxyz/F3N
-cd F3N
+git clone https://github.com/dashnetworkxyz/LegacyBackports
+cd LegacyBackports
 gradlew.bat build
 ```
 
 ### macOS / Linux
 ```
-git clone https://github.com/dashnetworkxyz/F3N
-cd F3N
+git clone https://github.com/dashnetworkxyz/LegacyBackports
+cd LegacyBackports
 ./gradlew build
 ```
 Compiled jar is located at versions/1.8.9-forge/build/libs/
