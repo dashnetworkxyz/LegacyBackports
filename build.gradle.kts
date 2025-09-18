@@ -1,7 +1,7 @@
 @file:Suppress("UnstableApiUsage", "PropertyName")
 
-import org.polyfrost.gradle.util.noServerRunConfigs
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+import org.polyfrost.gradle.util.noServerRunConfigs
 
 plugins {
     kotlin("jvm")

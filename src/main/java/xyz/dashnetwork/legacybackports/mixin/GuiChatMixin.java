@@ -27,10 +27,12 @@ public class GuiChatMixin {
         ServerData server = Minecraft.getMinecraft().getCurrentServerData();
 
         if (server != null) {
-            String ip = server.serverIP;
+            final String ip = server.serverIP;
             String[] servers = BackportConfig.tfsChatServers.split(";");
 
-            if (Arrays.stream(servers).anyMatch(each -> each.equalsIgnoreCase(ip) || each.endsWith("." + ip)))
+            if (Arrays.stream(servers).noneMatch(
+                    each -> ip.equalsIgnoreCase(each) || ip.toLowerCase().endsWith("." + each.toLowerCase())
+            ))
                 return;
         }
 
