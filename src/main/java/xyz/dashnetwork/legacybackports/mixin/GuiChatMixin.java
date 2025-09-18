@@ -30,7 +30,7 @@ public class GuiChatMixin {
             String ip = server.serverIP;
             String[] servers = BackportConfig.tfsChatServers.split(";");
 
-            if (Arrays.stream(servers).noneMatch(each -> each.equalsIgnoreCase(ip) || each.endsWith("." + ip)))
+            if (Arrays.stream(servers).anyMatch(each -> each.equalsIgnoreCase(ip) || each.endsWith("." + ip)))
                 return;
         }
 
