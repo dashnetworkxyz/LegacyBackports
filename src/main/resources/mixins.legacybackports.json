@@ -8,7 +8,8 @@
   },
   "client": [
     "GuiChatMixin",
-    "GuiScreenMixin"
+    "GuiScreenMixin",
+    "ItemStackMixin"
   ],
   "verbose": true
 }

@@ -3,7 +3,6 @@
 Adds some Quality of Life features from newer versions.
 - Creative / Spectator gamemode switch keybind (default F3+N)
 - Increased chat limit to 256 with customizable servers
-- Command blocks & barriers added to creative inventory
 
 ### Installation
 

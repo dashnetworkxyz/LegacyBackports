@@ -28,8 +28,8 @@ public final class BackportConfig extends Config {
     @KeyBind(name = "Creative / Spectator switch", subcategory = "Keybind", size = OptionSize.DUAL)
     public static OneKeyBind ftnKeybind = new OneKeyBind(UKeyboard.KEY_F3, UKeyboard.KEY_N);
 
-    @Switch(name = "Add operator items to creative inventory", subcategory = "Inventory", size = OptionSize.DUAL)
-    public static boolean operatorItems = true;
+    @Switch(name = "Disable item breaks", subcategory = "Fixes")
+    public static boolean disableItemBreaks = true;
 
     public BackportConfig() {
         super(new Mod("LegacyBackports", ModType.UTIL_QOL), "legacybackports.json");
